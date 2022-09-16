@@ -1,0 +1,132 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600&display=swap');
+     :root {
+        --Violet: hsl(257, 40%, 49%);
+        --SoftMagenta: hsl(300, 69%, 71%);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: var(--Violet);
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: [Poppins];
+        font-weight: 400;
+        min-height: 100vh;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100vh
+    }
+    
+    .content {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 0;
+        margin: 0 2rem;
+    }
+    
+    header img {
+        width: 190px;
+        padding-bottom: 20px;
+    }
+    
+    .wrapper {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .Info h1 {
+        color: #fff;
+        font-size: ;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 20px;
+    }
+    
+    .Info p {
+        font-family: 'open Sans', sans-serif;
+        color: #fff;
+        line-height: 2;
+        margin-bottom: 30px;
+    }
+    
+    .btn {
+        width: 210px;
+        background: #fff;
+        padding: 20px;
+        border: none;
+        border-radius: 60px;
+        font-size: 17px;
+        color: var(--Violet);
+        font-weight: 400;
+        margin-top: 30px;
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.56);
+    }
+    
+    .btn:hover {
+        background-color: var(--SoftMagenta);
+        color: #fff;
+    }
+    
+    .social-link {
+        text-align: right;
+    }
+    
+    .social-link a i {
+        color: #fff;
+        font-size: 14px;
+        position: relative;
+    }
+    
+    .social-link a :not(first-child) {
+        margin-left: 3rem;
+    }
+    
+    .social-link a i::after {
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        left: -15px;
+        bottom: -13px;
+    }
+    
+    .social-link a:nth-child(2) {
+        margin-left: 1rem;
+    }
+    
+    .social-link a:hover {
+        color: var(--SoftMagenta);
+    }
+    
+    @media (max-width: 748px) {
+        .wrapper {
+            flex-direction: column;
+            text-align: center;
+        }
+        .huddle-image img {
+            width: 100%;
+        }
+        .Info {
+            font-size: 20px;
+        }
+        .social-link {
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 70px;
+        }
+    }
